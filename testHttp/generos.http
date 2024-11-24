@@ -1,0 +1,23 @@
+@url = https://8080-marcoweb-restbiblioteca-h6tjppj8uu3.ws-us116.gitpod.io
+
+GET {{url}}/generos
+
+###
+POST {{url}}/generos
+Content-Type: application/json
+
+{
+    "nome": "Policial"
+}
+
+###
+PUT {{url}}/generos/1
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "nome": "Aventura 1"
+}
+
+###
+DELETE {{url}}/generos/1

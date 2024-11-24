@@ -1,0 +1,30 @@
+@url = https://8080-marcoweb-restbiblioteca-h6tjppj8uu3.ws-us116.gitpod.io
+
+
+GET {{url}}/livros
+
+###
+POST {{url}}/livros
+Content-Type: application/json
+
+{
+    "titulo": "Assassinao no Expresso do Oriente",
+    "genero" : {
+        "id": 2,
+        "nome": "????"
+    }
+}
+
+###
+PUT {{url}}/livros/1
+Content-Type: application/json
+
+{
+    "titulo": "A Sociedade do Anel",
+    "genero": {
+        "id": 1
+    }
+}
+
+###
+DELETE {{url}}/livros/2
